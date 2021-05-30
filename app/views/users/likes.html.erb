@@ -1,0 +1,30 @@
+<div class="main user-show">
+  <div class="user">
+    <h2><%= @user.name %></h2>
+      <p><%= @user.email %></p>
+      <!-- @userのidとLog Inしているユーザーのidが等しい場合のみ、以下のリンクを表示してください -->
+      <% if @user.id == @current_user.id %>
+      <%= link_to("アカウント編集", "/users/#{@user.id}/edit") %>
+      <% end %>
+ </div>
+
+  <div class="container"> 
+    <ul class="user-tabs">
+      <li><%= link_to("出品リスト", "/users/#{@user.id}") %></li>
+      <li class="active"><%= link_to("いいね!リスト", "/users/#{@user.id}/likes") %></li>
+    </ul>
+    
+    <% @likes.each do |like| %>
+      <% yoyo = Yoyo.find_by(id: like.yoyo_id) %>
+      
+      <div class="yoyos-index-item">
+        <div class="yoyo-left">
+          <img src="<%= "/yoyo_images/#{yoyo.image_name}" %>">
+        </div>
+        <div class="yoyo-right">
+          <%= link_to(yoyo.name, "/yoyos/#{yoyo.id}") %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

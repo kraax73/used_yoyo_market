@@ -1,0 +1,334 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/* リセットCSS ================================ */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font: 100%/1.5 'Avenir Next', 'Hiragino Sans', sans-serif;
+  line-height: 1.7;
+  letter-spacing: 1px; 
+}
+
+ul, li {
+  list-style-type: none; /*斑点消去*/
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #2d3133;
+  font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+input,textarea{
+  background-color: transparent;
+  outline-width: 2px; /*輪郭線の太さ*/
+  outline-color: rgb(80, 198, 245); /*枠線の色*/
+}
+
+form input[type="submit"] {
+  border: none;
+  cursor: pointer; /*指印カーソル*/
+}
+
+/* 全ページ共通レイアウト ================================ */
+body {
+  color: #222222;
+  background-color: #3b3c3f;  
+  width: 100%; 
+  margin: 0;
+  min-height:100vh;
+  position: relative;
+}
+
+.main {
+  position: absolute;
+  top: 64px;
+  width: 100%; 
+  background-color: rgb(233, 234, 235);
+  min-height: 100vh;
+}
+
+.container {
+  /* max-width: 750px; */
+  width: 100%;
+  margin: 80px auto; /*ページの伸縮に対応*/
+  padding-left: 15px;
+  padding-right: 15px;
+  clear: both;
+}
+
+/* ヘッダーレイアウト ================================ */
+header {
+  background-color: rgba(40, 48, 49, 0.9);
+  height: 64px;
+  position:fixed;
+  z-index: 10;
+  top:0;
+  width: 100%;
+}
+
+.header-logo {
+  float: left;
+  padding-left: 25px;
+  color: white;
+  font-size: 22px;
+  line-height: 64px;
+}
+
+.header-logo a{
+  color: white;
+  font-size: 22px;
+}
+
+.header-menus {
+  float: right;
+  padding-right: 20px;
+}
+
+.header-menus li {
+  float: left;
+  line-height: 64px;
+  font-size: 13px;
+  color: white;
+  padding-left: 15px;
+}
+
+.header-menus a {
+  float: left;
+  font-size: 13px;
+  color: white;
+}
+
+.header-menus .fa {
+  padding-right: 5px;
+}
+
+.header-menus input[type="submit"] {
+  padding: 0 20px;
+  float: left;
+  line-height: 64px;
+  color: white;
+  margin: 0;
+  font-size: 13px;
+}
+
+.sp-menu {
+  display: none;
+}
+
+.overlay {
+  display: none;
+}
+
+/* フッターレイアウト ================================ */
+.footer {
+  background-color:  #3b3c3f;
+  height: 64px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.footer p {
+  color: white;
+  font-size: 15px;
+  font-weight: 200;
+  padding-top: 20px;
+}
+
+
+/* topレイアウト ================================ */
+.top-main {
+  padding: 250px 0 100px;
+  text-align: center;
+  position: relative;
+  top: 0;
+  width: 100%;
+  color: white;
+  background-image: url("/top.jpg");
+  background-repeat: no-repeat;
+  background-position: center 50%;
+  background-size: cover;
+}
+
+.top-message {
+  margin-top: 45px;
+  position: relative;
+}
+
+.top-main h2 {
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 30px;
+  -webkit-font-smoothing: antialiased; /*アンチエイリアス*/
+}
+
+.top-main p {
+  font-size: 30px;
+}
+
+.top-message .btn {
+  padding:15px 30px;
+  margin-top: 100px;
+  color:rgb(255, 255, 255);
+  font-size: 15px;
+  display:inline-block;
+  opacity:0.8;
+  border-radius:8px;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+/* ログインボタン */
+.login {
+  background-color: orangered;
+  margin-right: 50px;
+}
+
+/* 新規登録ボタン */
+.signup {
+  background-color: orangered;
+}
+
+
+/* aboutレイアウト ================================ */
+.about {
+  padding: 190px 0 100px 0;
+  text-align: center;
+  color: black;
+  background-image: url("/about1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.about-main h2 {
+  color: white;
+  font-size: 66px;
+  font-weight: 500;
+  line-height: 1.4;
+  padding-bottom: 35px;
+}
+
+.about-img {
+  width: 500px;
+  height: 350px;
+  box-shadow: 0 3px 6px #898f94;
+  margin-bottom: 20px;
+}
+
+.about p {
+  color: white;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.about-contain {
+  background-color: white;
+  text-align: center;
+  height: auto;
+  padding-bottom: 60px;
+}
+
+.about-contain h3 {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.about-contain p {
+  font-size: 20px;
+  font-weight: 300;
+  
+}
+
+
+/* フォームレイアウト================================ */
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 2px 6px #99a3aa;
+}
+
+.form-heading {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 200;
+  margin: 60px 0 20px;
+  color: #70757a;
+}
+
+.form-body {
+  padding: 30px 40px;
+}
+
+.form-error {
+  color: #fa1748;
+}
+
+.form input {
+  width: 100%;
+  border: 2px solid #c9d1d0;
+  padding: 10px;
+  color: #363638;/*入力された文字の色*/
+  font-size: 15px;/*入力された文字の大きさ*/
+  letter-spacing: 3px;/*入力された文字の間隔*/
+  border-radius: 5px;
+}
+
+.form textarea {
+  width: 100%;
+  color: #363638;
+  font-size: 15px;
+  min-height: 110px;
+  letter-spacing: 3px;
+  border-radius: 5px;
+}
+
+.form input[type="submit"] {
+  cursor: pointer;
+  color: white;
+  background-color: #fa6d1b;
+  font-weight: 300;
+  width: 140px;
+  border-radius: 3%;
+  margin-top: 15px;
+  margin-bottom: 0;
+  float: right;
+}
+
+.form-body:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+/* フラッシュメッセージ================================ */
+.flash {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  background: rgb(16, 111, 253);
+  padding: 10px 0;
+  text-align: center;
+  position: absolute;
+  top: 64px;
+  z-index: 10;
+  width: 100%;
+  border-radius: 0 0 2px 2px;
+  opacity:0.8;
+}

@@ -1,0 +1,26 @@
+<div class="main yoyos-new">
+  <div class="container">
+    <h1 class="form-heading">商品情報の入力</h1>
+      <div class="form">
+        <div class="form-body">
+          <% @yoyo.errors.full_messages.each do |message| %>
+            <div class="form-error">
+              <%= message %>
+            </div>
+          <% end %>
+
+          <%= form_tag("/yoyos/create",{multipart: true}) do %>
+            <p>商品名</p>
+            <input name="name" value="<%= @yoyo.name %>">
+            <p>商品画像</p>
+            <input name="image" type="file">
+            <p>説明</p>
+            <textarea name="detail"><%= @yoyo.detail %></textarea>
+            <p>価格(¥)</p>
+            <input name="price" value="<%= @yoyo.price %>">
+            <input type="submit" value="出品">
+          <% end %>
+        </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>USEDヨーヨーマーケット</title>
+    <!-- クロスサイトリクエストフォージェリー（CSRF）対策を有効 -->
+    <%= csrf_meta_tags %>
+    <!-- CSP（Content Security Policy）の適応 -->
+    <%= csp_meta_tag %>
+
+    <!-- JSとCSSをTurbolinksで画面遷移を行うサイン -->
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- font awesome 5 読み込み -->
+    <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+    <!-- viewport読み込み -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- レスポンシブCSS読み込み -->
+    <link rel="stylesheets" href="responsive.scss">
+    <!-- マテリアルアイコン読み込み -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="header-logo">
+        <%= link_to("USEDヨーヨーマーケット","/") %>
+      </div> 
+
+      <div class="sp-menu">
+        <span class="material-icons" id="open">menu</span>
+      </div>
+      
+      <ul class="header-menus">
+      <% if @current_user %>
+        <li>
+          <%= link_to("ABOUT","/about") %>
+        </li>
+        <li>
+          <%= link_to("商品一覧","/yoyos/index") %>
+        </li>
+        <li>
+          <%= link_to("ヨーヨーを探す","/yoyos/search") %>
+        </li>
+        <li>
+          <%= link_to("出品する","/yoyos/sell") %>
+        </li>
+        <li>
+            <%= link_to("マイページ","/users/#{@current_user.id}") %>
+        </li>
+        <li>
+          <i class="fas fa-sign-out-alt"></i>
+          <%= link_to("ログアウト", "/logout", {method: "post"}) %>
+        </li>
+      <% else %>
+        <li>
+          <%= link_to("ABOUT","/about") %>
+        </li>
+        <li>
+          <%= link_to("ログイン","/login") %>
+        </li>
+        <li>
+          <%= link_to("新規登録","/signup") %>
+        </li>
+      <% end %>
+      </ul>
+   </header>
+
+   <div class="overlay">
+    <span class="material-icons" id="close">close</span>
+    <nav>
+      <ul>
+        <% if @current_user %>
+        <li>
+          <%= link_to("HOME","/") %>
+        </li>
+        <li>
+          <%= link_to("ABOUT","/about") %>
+        </li>
+        <li>
+          <%= link_to("商品一覧","/yoyos/index") %>
+        </li>
+        <li>
+          <%= link_to("ヨーヨーを探す","/yoyos/search") %>
+        </li>
+        <li>
+          <%= link_to("出品する","/yoyos/sell") %>
+        </li>
+        <li>
+            <%= link_to("マイページ","/users/#{@current_user.id}") %>
+        </li>
+        <li>
+          <i class="fas fa-sign-out-alt"></i>
+          <%= link_to("ログアウト", "/logout", {method: "post"}) %>
+        </li>
+      <% else %>
+        <li>
+          <%= link_to("HOME","/") %>
+        </li>
+        <li>
+          <%= link_to("ABOUT","/about") %>
+        </li>
+        <li>
+          <%= link_to("ログイン","/login") %>
+        </li>
+        <li>
+          <%= link_to("新規登録","/signup") %>
+        </li>
+      <% end %>
+      </ul>
+    </nav>
+    </div>
+
+   <main>
+    <% if flash[:notice]%>
+      <div class="flash">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
+    
+    <%= yield %>
+   </main>
+
+  <!-- JavaScript読み込み -->
+  <%= javascript_include_tag "application.js" %>
+  
+  </body>
+</html>
+
+

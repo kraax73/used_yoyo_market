@@ -1,0 +1,44 @@
+<div class="main yoyos-show">
+  <div class="container-yoyos-show">
+    <div class="yoyos-show-item">
+      <h1><%= @yoyo.name %></h1>
+      <p><img src="<%= "/yoyo_images/#{@yoyo.image_name}" %>"></p>
+      
+      <div class="user-name">
+        出品者:<%= link_to(@user.name, "/users/#{@user.id}") %>
+      </div>
+
+      <div class="price">
+        ¥<%= @yoyo.price %> 
+      </div>
+
+      <p>
+        <% if Like.find_by(user_id: @current_user.id, yoyo_id: @yoyo.id) %>
+          <%= link_to("/likes/#{@yoyo.id}/destroy",{method: "POST"}) do %>
+            <button class="btn like">いいね!済み</button>
+          <% end %>
+        <% else %>
+          <%= link_to("/likes/#{@yoyo.id}/create",{method: "POST"}) do %>
+            <button class="btn like">いいね!</button>
+          <% end %>
+        <% end %>
+      
+        <%= link_to("#") do %>
+          <button class="btn buy">購入する</button>
+        <% end %>
+      </p>
+
+      <div class="detail">
+        <h2>商品の詳細</h2>
+        <p><%= @yoyo.detail %></p>
+      </div>
+
+      <% if @yoyo.user_id == @current_user.id %> <!-- 出品者とユーザーが一致する場合のみ表示 -->
+        <div class="yoyo-menus">
+          <%= link_to("編集", "/yoyos/#{@yoyo.id}/edit") %>
+          <%= link_to("削除", "/yoyos/#{@yoyo.id}/destroy",{method: "POST"}) %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

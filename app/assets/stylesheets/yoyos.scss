@@ -1,0 +1,170 @@
+// Place all the styles related to the yoyos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/* 商品一覧レイアウト ================================ */
+.yoyos-heading {
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 35px;
+  font-weight: 300;
+}
+
+.yoyos-index-item {
+  width:70%;
+  height: 120px;
+  padding: 20px 20px;
+  margin: 0 auto;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 2px 6px #c1ced7;
+}
+
+.yoyo-left img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.yoyo-left {
+  float: left;
+  width: 10%;
+}
+
+.yoyo-right {
+  float: left;
+  width: 90%;
+  padding-top: 20px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+.yoyo-right a {
+  font-size: 25px;
+}
+
+.yoyo-right a:hover {
+  color: #ff0909;
+}
+
+
+
+/* 商品詳細レイアウト ================================ */
+.container-yoyos-show {
+  max-width: 900px;
+  margin: 80px auto;/*ページの伸縮に対応*/
+  padding-left: 20px;
+  padding-right: 20px;
+  clear: both;
+}
+
+.yoyos-show-item {
+  text-align: center;
+  height: 1200px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: white;
+  box-shadow: 0 2px 6px #c1ced7;
+  overflow: hidden;
+}
+
+.yoyos-show-item h1 {
+  text-align: center; 
+}
+
+.yoyos-show-item img {
+  padding-top: 10px;
+  width: 600px;
+  height: 600px;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.user-name {
+  font-size: 15px;
+}
+
+.price {
+  color: #fd2121;
+  font-size: 30px;
+}
+
+.yoyos-show-item .yoyo-user-name a {
+  vertical-align: middle;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.yoyos-show-item p {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.btn {
+  padding:8px 24px;
+  color:white;
+  display:inline-block;
+  opacity:0.8;
+  border-radius:4px;
+  cursor: pointer;
+  border: none;
+  margin-left: 10px;
+}
+
+.btn:hover {
+  opacity:1;
+}
+
+.like {
+  background-color:#2292dd;
+}
+
+.buy {
+  background-color:#fd2121;
+}
+
+.detail {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.detail h2 {
+  font-size: 20px;
+  font-weight: 350;
+  color: #3a3c3d;
+  padding-top: 20px;
+  text-align: left;
+  border-bottom: 2px solid rgb(165, 163, 163);
+}
+
+.yoyo-menus {
+  padding-bottom: 15px;
+  float: right;
+  margin-right: 15px;
+}
+
+.yoyo-menus a, .yoyo-menus input {
+  color: #8899a6;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+/* 出品画面レイアウト ================================ */
+.yoyos-new textarea {
+  font-size: 20px;
+  padding: 10px;
+  min-height: 140px;
+  border: 1px solid rgb(216, 218, 223);
+  resize: none;
+}
+
+.yoyos-new textarea::-webkit-input-placeholder {
+  font-size: 24px;
+  opacity: 0.5;
+}
+
+/* ヨーヨー検索レイアウト ================================ */
+.search-results {
+  margin-top: 50px;
+}
