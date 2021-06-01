@@ -12,7 +12,7 @@
 //
 //= require rails-ujs
 //= require activestorage
-//= require turbolinks
+// require turbolinks
 
 //特定のJSファイルを読み込むためにツリーをコメントアウトして停止
 // require_tree .
@@ -21,7 +21,7 @@
 //厳密なエラーチェック
 'use strict';
 
-{
+window.onload = function(){
   const open = document.getElementById('open');
   const overlay = document.querySelector('.overlay');
   const close = document.getElementById('close');
@@ -37,4 +37,5 @@
     overlay.classList.remove('show');
     open.classList.remove('hide');
   });
-}
+};
+
