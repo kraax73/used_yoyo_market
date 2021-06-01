@@ -31,7 +31,7 @@ class YoyosController < ApplicationController
     )
 
     if params[:image]
-      @yoyo.image_name = "#{@yoyo.id}.jpg"
+      @yoyo.image_name = "#{@yoyo.name}.jpg"
       image = params[:image]
       File.binwrite("public/yoyo_images/#{@yoyo.image_name}",image.read)
     end
