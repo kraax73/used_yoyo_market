@@ -3,12 +3,11 @@
     <h1 class="yoyos-heading">商品一覧</h1>
 
       <% @yoyos.each do |yoyo| %>
-        <div class="yoyos-index-item">
         
+        <div class="yoyos-index-item">
           <div class="yoyo-left">
             <img src="<%= "/yoyo_images/#{yoyo.image_name}" %>">
           </div>
-        
           <div class="yoyo-right">
             <%= link_to(yoyo.name, "/yoyos/#{yoyo.id}") %>
           </div>
