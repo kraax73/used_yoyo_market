@@ -13,6 +13,7 @@
       </div>
 
       <p>
+        <!-- 2つの条件を満たすデータがLikesテーブルにあった場合 -->
         <% if Like.find_by(user_id: @current_user.id, yoyo_id: @yoyo.id) %>
           <%= link_to("/likes/#{@yoyo.id}/destroy",{method: "POST"}) do %>
             <button class="btn like">いいね!済み</button>

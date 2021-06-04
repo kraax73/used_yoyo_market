@@ -18,8 +18,6 @@ Rails.application.routes.draw do
   get "yoyos/:id" => "yoyos#show"
   get "signup" => "users#new"
   
-
-
   post "yoyos/create" => "yoyos#create"
   get "yoyos/:id/edit" => "yoyos#edit"
   post "yoyos/:id/update" => "yoyos#update"

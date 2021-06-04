@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  before_action :forbid_login_user,{only: [:new, :create, :login_form, :login]}
-  before_action :ensure_correct_user, {only: [:edit, :update]}
+  before_action :forbid_login_user,{only: [:new, :create, :login_form, :login]} #ログインユーザーのみアクセス可
+  before_action :ensure_correct_user, {only: [:edit, :update]} #ログインユーザー自身の情報のみ編集可
 
   def show
     @user = User.find_by(id: params[:id]) 
@@ -54,6 +54,7 @@ class UsersController < ApplicationController
       password: params[:password]
     )
 
+    #特定したユーザーidをsessionに代入することでログイン状態を保持
     if @user 
       session[:user_id] = @user.id
       flash[:notice] = "ログインしました"
@@ -73,6 +74,7 @@ class UsersController < ApplicationController
     redirect_to("/login")
   end
 
+  #to_iでparamsを文字列から数値に変換して比較
   def ensure_correct_user
     if @current_user.id != params[:id].to_i
       flash[:notice] = "権限がありません。"

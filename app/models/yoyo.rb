@@ -12,18 +12,21 @@ class Yoyo < ApplicationRecord
 
   validates :price,{presence: true}
 
+  #Yoyoモデル内に、その商品に紐付いたuserインスタンスを戻り値として返すuserメソッドを定義
   def user
     return User.find_by(id: self.user_id)
   end
 
+  
   def self.search(search)
     empty_search = true
-
+    
     if search         #検索した場合、検索ワードを含む商品を表示
       Yoyo.where(['name LIKE ?', "%#{search}%"])
     else
       Yoyo.none       #検索してない場合、空データをセット
     end
+    
   end
 
 end

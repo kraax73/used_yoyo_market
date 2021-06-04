@@ -1,6 +1,6 @@
 class YoyosController < ApplicationController
 
-  #アクセス制限
+  #全アクション共通処理
   before_action :authenticate_user, {only: [:index, :sell, :edit, :update, :destroy]} #ログインユーザーのみアクセス可
   before_action :ensure_correct_user, {only: [:edit, :update, :destroy]} #ログインユーザー自身の情報のみ編集可
 
@@ -15,7 +15,7 @@ class YoyosController < ApplicationController
 
   def show
     @yoyo = Yoyo.find_by(id: params[:id])
-    @user = @yoyo.user  
+    @user = @yoyo.user  #yoyoインスタンスを@userに代入
   end
 
   def sell
@@ -23,11 +23,12 @@ class YoyosController < ApplicationController
   end
 
   def create
-    @yoyo = Yoyo.new(
+      @yoyo = Yoyo.new(
       name: params[:name],
       detail: params[:detail],
       price: params[:price],
-      user_id: @current_user.id,
+      #出品時にuser_idに出品したユーザーidを加える
+      user_id: @current_user.id
     )
 
     if params[:image]

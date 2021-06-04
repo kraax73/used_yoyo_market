@@ -8,12 +8,13 @@
               <%= message %>
             </div>
           <% end %>
-
+          
+          <!-- 画像送信のためmulitipart: trueを追加 -->
           <%= form_tag("/yoyos/create",{multipart: true}) do %>
             <p>商品名</p>
             <input name="name" value="<%= @yoyo.name %>">
             <p>商品画像</p>
-            <input name="image" type="file">
+            <input name="image" type="file"><!-- fileで画像を設定-->
             <p>説明</p>
             <textarea name="detail"><%= @yoyo.detail %></textarea>
             <p>価格(¥)</p>
