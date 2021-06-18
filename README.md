@@ -1,24 +1,21 @@
-# README
+# USEDヨーヨーマーケット
+https://heroku-deploy-usedyoyo-app.herokuapp.com/
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# 概要
+プレイヤー同士でヨーヨーを取引できるアプリです。
+ヨーヨーを整理して、欲しかったヨーヨーをゲットして、お互いHAPPYになろう!
 
-Things you may want to cover:
+# アプリを開発した経緯
 
-* Ruby version
+# 画面と機能紹介
 
-* System dependencies
+# 使用技術   
 
-* Configuration
+# 注意点
+ 
+# 開発者
+ 
+* 作成者 - Taisei Mawaritachi https://github.com/kraax73
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ 
+ 
