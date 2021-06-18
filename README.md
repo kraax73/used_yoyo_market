@@ -19,7 +19,7 @@
  
 # 🪀開発者
  
-* 🪀作成者 - Taisei Mawaritachi https://github.com/kraax73
+作成者 - Taisei Mawaritachi https://github.com/kraax73
 
  
  
