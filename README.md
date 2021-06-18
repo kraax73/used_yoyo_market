@@ -14,6 +14,10 @@
 # 画面と機能紹介
 
 # 開発環境   
+・macOS BigSur 11.3.1
+・VScode (Visual Studio Code)
+・Rails 5.2.6
+・Ruby 2.7.3
 
 # 注意点
  
