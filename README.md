@@ -1,9 +1,11 @@
 ![無題5_20210618165259](https://user-images.githubusercontent.com/82016012/122527171-0d124c80-d056-11eb-8798-0cc711147035.jpg)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/kraax73/used_yoyo_market?color=green)
+
 # 
 # <img src="https://img.shields.io/badge/-Ruby-CC342D.svg?logo=ruby&style=popout"> <img src="https://img.shields.io/badge/-Rails-CC0000.svg?logo=rails&style=popout"> <img src="https://img.shields.io/badge/-Javascript-F7DF1E.svg?logo=javascript&style=popout"> <img src="https://img.shields.io/badge/-Html5-E34F26.svg?logo=html5&style=popout"> <img src="https://img.shields.io/badge/-Css3-1572B6.svg?logo=css3&style=popout">
 
 
-# USEDヨーヨーマーケット🪀
+# USEDヨーヨーマーケット🪀 
 【アプリURL】 https://heroku-deploy-usedyoyo-app.herokuapp.com/
 
 # 概要
