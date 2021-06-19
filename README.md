@@ -1,5 +1,6 @@
 ![アプリロゴ](https://user-images.githubusercontent.com/82016012/122631938-2c6ab180-d10a-11eb-9208-ab02548a98b2.jpg)
 ![top](https://user-images.githubusercontent.com/82016012/122631944-41474500-d10a-11eb-9d41-a34a1bc91a84.png)
+<img src="https://img.shields.io/badge/-Rails-CC0000.svg?logo=rails&style=popout"> <img src="https://img.shields.io/badge/-Ruby-CC342D.svg?logo=ruby&style=popout"> <img src="https://img.shields.io/badge/-Javascript-F7DF1E.svg?logo=javascript&style=popout"> <img src="https://img.shields.io/badge/-Html5-E34F26.svg?logo=html5&style=popout"> <img src="https://img.shields.io/badge/-Css3-1572B6.svg?logo=css3&style=popout">
 #
 # USEDヨーヨーマーケット🪀
 【URL】https://heroku-deploy-usedyoyo-app.herokuapp.com
