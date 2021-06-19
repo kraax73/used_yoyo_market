@@ -57,7 +57,7 @@
 
 
 # 使用技術  
-・Rails 5.2.6<br>・Ruby 2.7.3
+・Rails 5.2.6<br>・Ruby 2.7.3<br>・JavaScript<br>・HTML5<br>・CSS3
 
 # 開発環境&使用ツール
 ・macOS BigSur 11.3.1<br>・VScode (Visual Studio Code)<br>・ibisPaint X
