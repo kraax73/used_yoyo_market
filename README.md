@@ -42,7 +42,7 @@
 
 | レスポンシブデザイン |  
 | :--- | 
-| ![responsive](https://user-images.githubusercontent.com/82016012/122632568-8e2d1a80-d10e-11eb-990e-30acdb32e47b.png) |   
+| <img src="https://user-images.githubusercontent.com/82016012/122632568-8e2d1a80-d10e-11eb-990e-30acdb32e47b.png" width="400px"> |   
 | スマートフォン・タブレットでの利用にも対応しています。 |  
 
 # 使用技術
