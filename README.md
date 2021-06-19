@@ -6,11 +6,6 @@
 # 概要
 
 # 使用画面と機能紹介
-|  |  | 
-| :--- | :--- | 
-|  |  | 
-|  |  | 
-
 | トップページ | ABOUT | 
 | :--- | :--- | 
 | ![top](https://user-images.githubusercontent.com/82016012/122631944-41474500-d10a-11eb-9d41-a34a1bc91a84.png) | ![about](https://user-images.githubusercontent.com/82016012/122632093-5a9cc100-d10b-11eb-8424-514c5e1e055f.png) | 
@@ -47,8 +42,10 @@
 | スマートフォン・タブレットでの利用にも対応しています。 |  
 
 # 使用技術
+・Rails 5.2.6<br>・Ruby 2.7.3<br>・JavaScript<br>・HTML5<br>・CSS3<br>・Puma
 
 # 開発環境＆使用ツール
+・macOS BigSur 11.3.1<br>・VScode(Visual Studio Code)<br>・ibisPaint X<br>・Git 2.31.1
 
 # 注意点
 
