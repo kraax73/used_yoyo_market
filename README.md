@@ -5,6 +5,9 @@
 # USEDヨーヨーマーケット🪀
 【URL】https://heroku-deploy-usedyoyo-app.herokuapp.com
 # 概要
+ヨーヨープレイヤー同士でヨーヨーを取引できるアプリです。<br>ヨーヨーを整理して、欲しかったヨーヨーをゲットして、お互いHAPPYになろう!
+
+# 開発した経緯
 
 # 使用画面と機能紹介
 | トップページ | ABOUT | 
