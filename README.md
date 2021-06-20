@@ -45,10 +45,14 @@
 | <img src="https://user-images.githubusercontent.com/82016012/122632568-8e2d1a80-d10e-11eb-990e-30acdb32e47b.png" width="400px"> |   
 | スマートフォン・タブレットでの利用にも対応しています。 |  
 
+# 画面遷移図
+<img src="https://user-images.githubusercontent.com/82016012/122660176-30560c80-d1ba-11eb-993b-cd0644182599.png" width="600px">
+
+# ER図
+<img src="https://user-images.githubusercontent.com/82016012/122634626-254b9f80-d11a-11eb-9f59-1b6f1bdfc543.jpeg" width="500px">
+
 # 使用技術
 ・Rails 5.2.6<br>・Ruby 2.7.3<br>・JavaScript<br>・HTML5<br>・CSS3<br>・Puma
-# ER図
-<img src="https://user-images.githubusercontent.com/82016012/122634626-254b9f80-d11a-11eb-9f59-1b6f1bdfc543.jpeg" width="400px">
 
 # 開発環境＆使用ツール
 ・macOS BigSur 11.3.1<br>・VScode(Visual Studio Code)<br>・ibisPaint X<br>・Git 2.31.1
