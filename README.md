@@ -61,6 +61,7 @@
 ・macOS BigSur 11.3.1<br>・VScode(Visual Studio Code)<br>・ibisPaint X<br>・Git 2.31.1
 
 # 注意点
+現時点では決済機能を実装していないため、実際に商品をご購入いただく事はできません。<br>今後アップデートを重ねていく中で、正式なリリースを目標としています。<br>何卒ご了承くださいませ。
 
 # 開発者
 Taisei Mawaritachi - https://github.com/kraax73
