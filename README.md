@@ -46,7 +46,7 @@
 | スマートフォン・タブレットでの利用にも対応しています。 |  
 
 # 画面遷移図
-<img src="https://user-images.githubusercontent.com/82016012/122660176-30560c80-d1ba-11eb-993b-cd0644182599.png" width="600px">
+<img src="https://user-images.githubusercontent.com/82016012/122660288-58923b00-d1bb-11eb-9888-3995910c225a.png" width="600px">
 
 # ER図
 <img src="https://user-images.githubusercontent.com/82016012/122634626-254b9f80-d11a-11eb-9f59-1b6f1bdfc543.jpeg" width="500px">
