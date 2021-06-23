@@ -58,7 +58,7 @@
 ・Rails 5.2.6<br>・Ruby 2.7.3<br>・JavaScript<br>・HTML5<br>・CSS3
 
 # 開発環境＆使用ツール
-・macOS BigSur 11.3.1<br>・VScode(Visual Studio Code)<br>・ibisPaint X<br>・Git 2.31.1<br>・Puma<br>Heroku-20
+・macOS BigSur 11.3.1<br>・VScode(Visual Studio Code)<br>・ibisPaint X<br>・Git 2.31.1<br>・Puma<br>・Heroku-20
 
 # 注意点
 現時点では決済機能を実装していないため、実際に商品をご購入いただく事はできません。<br>今後アップデートを重ねていく中で、正式なリリースを目標としています。<br>何卒ご了承くださいませ。
