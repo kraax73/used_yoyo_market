@@ -55,7 +55,7 @@
 <img src="https://user-images.githubusercontent.com/82016012/122634626-254b9f80-d11a-11eb-9f59-1b6f1bdfc543.jpeg" width="500px">
 
 # 使用技術
-・Rails 5.2.6<br>・Ruby 2.7.3<br>・JavaScript<br>・HTML5<br>・CSS3
+・Rails 5.2.6<br>・Ruby 2.7.3<br>・JavaScript<br>・HTML&CSS
 
 # 開発環境＆使用ツール
 ・macOS BigSur 11.3.1<br>・VScode(Visual Studio Code)<br>・ibisPaint X<br>・Git 2.31.1<br>・Puma<br>・Heroku-20
