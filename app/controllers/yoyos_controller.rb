@@ -6,6 +6,20 @@ class YoyosController < ApplicationController
 
   def index
     @yoyos = Yoyo.all.order(created_at: :desc) #上から新しい順に
+    
+    #ソート機能
+    if params[:option] == "href=value" || params[:option] == nil
+     @yoyos = Yoyo.all.order('created_at DESC')
+    elsif params[:option] == "price_asc"
+      @yoyos = Yoyo.all.order(price: :ASC)
+    elsif params[:option] == "price_desc"
+      @yoyos = Yoyo.all.order(price: :DESC)
+    elsif params[:option] == "created_at_asc"
+      @yoyos = Yoyo.all.order(created_at: :ASC)
+    elsif params[:option] == "created_at_desc"
+      @yoyos = Yoyo.all.order(created_at: :DESC)
+    end
+  
   end
 
   def search
@@ -16,6 +30,8 @@ class YoyosController < ApplicationController
   def show
     @yoyo = Yoyo.find_by(id: params[:id])
     @user = @yoyo.user  #yoyoインスタンスを@userに代入
+    #いいね数を取得
+    @likes_count = Like.where(yoyo_id: @yoyo.id).count
   end
 
   def sell
@@ -23,7 +39,7 @@ class YoyosController < ApplicationController
   end
 
   def create
-      @yoyo = Yoyo.new(
+    @yoyo = Yoyo.new(
       name: params[:name],
       detail: params[:detail],
       price: params[:price],

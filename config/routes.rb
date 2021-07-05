@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
- root "home#top"
+  root "home#top"
   
   get "users/:id/likes" => "users#likes"
   post "likes/:yoyo_id/destroy" => "likes#destroy"

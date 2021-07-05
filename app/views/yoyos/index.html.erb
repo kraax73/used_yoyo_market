@@ -2,16 +2,30 @@
   <div class="container">
     <h1 class="yoyos-heading">商品一覧</h1>
 
-      <% @yoyos.each do |yoyo| %>
-        
-        <div class="yoyos-index-item">
-          <div class="yoyo-left">
-            <img src="<%= "/yoyo_images/#{yoyo.image_name}" %>">
-          </div>
-          <div class="yoyo-right">
-            <%= link_to(yoyo.name, "/yoyos/#{yoyo.id}") %>
-          </div>
+    <!-- ソート機能(プルダウンメニュー) -->
+    <div class="sort">
+      <select name="select" onChange="location.href=value;"> 
+        <option value="href=value">並び替える</option>
+        <option value="?option=price_asc">価格の安い順</option>
+        <option value="?option=price_desc">価格の高い順</option>
+        <option value="?option=created_at_asc">出品の古い順</option>
+        <option value="?option=created_at_desc">出品の新しい順</option>
+      </select>
+    </div>
+    
+    <% @yoyos.each do |yoyo| %>
+      <div class="yoyos-index-item">
+        <div class="yoyo-left">
+          <img src="<%= "/yoyo_images/#{yoyo.image_name}" %>">
         </div>
-      <% end %>
+        <div class="yoyo-right">
+          <%= link_to(yoyo.name, "/yoyos/#{yoyo.id}") %>
+        </div>
+        <div class="yoyo-price">
+          ¥<%= yoyo.price %> 
+        </div>
+      </div>
+    <% end %>
+  
   </div>
 </div>

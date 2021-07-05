@@ -11,19 +11,36 @@
   font-weight: 300;
 }
 
+.sort {
+  text-align: center;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+
+.sort select {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #1094ff;
+  color: rgb(255, 255, 255);
+  border: solid 2px rgb(121, 120, 120);
+}
+
 .yoyos-index-item {
-  width:70%;
-  height: 120px;
+  width: /*200px;*/  70%;
+  height: /*300px;*/ 120px;
   padding: 20px 20px;
   margin: 0 auto;
   background-color: white;
   overflow: hidden;
   box-shadow: 0 2px 6px #c1ced7;
+  /*float: left;*/
+  /*margin: 10px 10px;*/
 }
 
 .yoyo-left img {
-  width: 70px;
-  height: 70px;
+  width: /*200px;*/ 70px;
+  height: /*200px; */ 70px;
   object-fit: cover;
 }
 
@@ -34,7 +51,7 @@
 
 .yoyo-right {
   float: left;
-  width: 90%;
+  width: 75%;
   padding-top: 20px;
   padding-left: 40px;
   text-align: left;
@@ -45,9 +62,15 @@
 }
 
 .yoyo-right a:hover {
-  color: #ff0909;
+  color: #ff0800;
 }
 
+.yoyo-price {
+  color: #ff0800;
+  float: right;
+  padding-top: 25px;
+  font-size: 20px;
+}
 
 
 /* 商品詳細レイアウト ================================ */
@@ -85,6 +108,11 @@
   font-size: 15px;
 }
 
+.user-name a:hover {
+  color: #ff0800;
+  border-bottom: solid 2px;
+}
+
 .price {
   color: #fd2121;
   font-size: 30px;
@@ -116,8 +144,14 @@
   opacity:1;
 }
 
-.like {
-  background-color:#2292dd;
+.like-btn {
+  color: #8899a6;
+  font-size: 30px;
+}
+
+.like-btn-unlike {
+  color: #00d12d;
+  font-size: 30px;
 }
 
 .buy {
