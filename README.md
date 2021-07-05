@@ -25,8 +25,8 @@
 
 | 商品一覧 | ヨーヨーを探す | 
 | :--- | :--- | 
-| ![yoyo-index](https://user-images.githubusercontent.com/82016012/122632209-4b6a4300-d10c-11eb-936d-a83d8e64c787.png) | ![search](https://user-images.githubusercontent.com/82016012/122632248-908e7500-d10c-11eb-9489-3b9d37dd16c7.png) | 
-|商品一覧画面です。<br>出品されているヨーヨーが見れます。 | 商品検索画面です。<br>入力したワードに合致する商品を表示します。 | 
+| ![yoyoindex](https://user-images.githubusercontent.com/82016012/124444469-98f7d880-ddb9-11eb-9e9e-0bbc3a0d082b.png)| ![search](https://user-images.githubusercontent.com/82016012/122632248-908e7500-d10c-11eb-9489-3b9d37dd16c7.png) | 
+|商品一覧画面です。<br>出品されているヨーヨーが見れます。<br>プルダウンメニューで商品の並べ替えが可能です。 | 商品検索画面です。<br>入力したワードに合致する商品を表示します。 | 
 
 | 出品する | マイページ | 
 | :--- | :--- | 
@@ -35,7 +35,7 @@
 
 |商品詳細|商品の編集  | 
 | :--- | :--- | 
-|![yoyo-show](https://user-images.githubusercontent.com/82016012/122632442-cc760a00-d10d-11eb-8ab2-66c188d6b4bd.png)|![yoyo-edit](https://user-images.githubusercontent.com/82016012/122632456-da2b8f80-d10d-11eb-8bdc-7644b9871380.png)| 
+|![yoyoshow](https://user-images.githubusercontent.com/82016012/124444742-dfe5ce00-ddb9-11eb-85da-1772da5be94f.png)|![yoyo-edit](https://user-images.githubusercontent.com/82016012/122632456-da2b8f80-d10d-11eb-8bdc-7644b9871380.png)| 
 | 商品の詳細画面です。<br>いいね・購入(出品者のみ編集・削除)ができます。<br>※現時点では実際に購入できません。<br>出品者名をクリックすると、出品者のページへ移動できます。 |商品の編集画面です。<br>出品した商品の情報編集ができます。 | 
 
 | アカウントの編集 | ログアウト | 
@@ -45,7 +45,7 @@
 
 | レスポンシブデザイン |  
 | :--- | 
-| <img src="https://user-images.githubusercontent.com/82016012/122632568-8e2d1a80-d10e-11eb-990e-30acdb32e47b.png" width="400px"> |   
+| <img src="https://user-images.githubusercontent.com/82016012/122632568-8e2d1a80-d10e-11eb-990e-30acdb32e47b.png" width="400px">　<img src="https://user-images.githubusercontent.com/82016012/124444899-060b6e00-ddba-11eb-94ac-27ce7eb145d1.png" width="400px">|   
 | スマートフォン・タブレットでの利用にも対応しています。 |  
 
 # 画面遷移図
