@@ -22,6 +22,18 @@
     padding-bottom: 10px;
     margin: 0 auto;
   }
+
+  .form input[type="submit"] {
+    cursor: pointer;
+    color: white;
+    background-color: #fa6d1b;
+    font-weight: 300;
+    width: 140px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    float: right;
+  }
   
   .login {
     padding-bottom: 10px;
