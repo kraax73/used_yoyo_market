@@ -6,7 +6,8 @@
     <%= csrf_meta_tags %>
     <!-- CSP（Content Security Policy）の適応 -->
     <%= csp_meta_tag %>
-
+    <!-- favicon設定 -->
+    <link rel="icon" type="image/png" href="/favicon.png">
     <!-- JSとCSSをTurbolinksで画面遷移を行うサイン -->
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -21,7 +22,7 @@
   </head>
 
   <body>
-
+  
     <header>
       <div class="header-logo">
         <%= link_to image_tag("/applogo.PNG",size:'134x60'), "/" %>
