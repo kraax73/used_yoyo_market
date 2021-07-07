@@ -60,7 +60,6 @@ body {
 }
 
 .container {
-  /* max-width: 750px; */
   width: 100%;
   margin: 80px auto; /*ページの伸縮に対応*/
   padding-left: 15px;
@@ -283,9 +282,9 @@ header {
   width: 100%;
   border: 2px solid #c9d1d0;
   padding: 10px;
-  color: #363638;/*入力された文字の色*/
-  font-size: 15px;/*入力された文字の大きさ*/
-  letter-spacing: 3px;/*入力された文字の間隔*/
+  color: #363638;
+  font-size: 15px;
+  letter-spacing: 3px;
   border-radius: 5px;
 }
 
