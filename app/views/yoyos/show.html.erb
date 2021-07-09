@@ -34,7 +34,7 @@
         <h2>商品の詳細</h2>
         <p><%= @yoyo.detail %></p>
       </div>
-
+      
       <% if @yoyo.user_id == @current_user.id %> <!-- 出品者とユーザーが一致する場合のみ表示 -->
         <div class="yoyo-menus">
           <%= link_to("編集", "/yoyos/#{@yoyo.id}/edit") %>
